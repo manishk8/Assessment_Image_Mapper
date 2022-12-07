@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+  padding: 40px 20%;
+  flex-direction: column;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  height: 600px;
+}
+.img-box img {
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+.img-pro {
+  margin-top: 16px;
+  background-color: #f3f3f3;
+}
+.img-pro p {
+  padding: 0 12px;
+}
+.popup {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 12px;
+}
+.popup input {
+  height: 24px;
+  width: 160px;
+}
+.popup p {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.btn-block {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-green {
+  background-color: green;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: #ff0000;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.red_circle {
+  width: 16px;
+  height: 16px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.hov-text {
+  display: none;
+  background-color: #f3f3f3;
+  padding: 4px 8px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 124px;
+  word-break: break-all;
+}
+.red_circle:hover .hov-text {
+  display: flex;
+}
+.description_list {
+  margin: 0 auto;
+  margin-top: 24px;
+}
+table {
+  width: 600px;
+}
+thead,
+tbody,
+tr {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  border-spacing: 0;
+}
+table th,
+td {
+  width: 128px;
+}
+table tr th:last-child,
+td:last-child {
+  width: 224px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ds-table {
+  width: 600px;
+}
+.ds-table table {
+  width: 100%;
+  table-layout: fixed;
+}

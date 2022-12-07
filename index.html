@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Upload and add description</title>
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <input
+          type="file"
+          id="image-input"
+          class="image-input"
+          accept="image/*"
+          onchange="loadFile(event)"
+        />
+      </div>
+
+      <div id="img-pro" class="img-pro"></div>
+
+      <div id="img-box" class="img-box">
+        <div class="popup" id="popup">
+          <p>Description</p>
+          <input type="text" id="description_text" />
+          <div class="btn-block">
+            <button type="button" class="btn-green" id="btn-save">Save</button>
+            <button type="button" class="btn-red" id="btn-cancel">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="description_list" id="description_list">
+        <table>
+          <thead>
+            <tr>
+              <th>X Position</th>
+              <th>Y Position</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+        </table>
+        <div id="dsTable" class="ds-table"></div>
+      </div>
+    </div>
+
+    <script src="image-mapper.js"></script>
+  </body>
+</html>
